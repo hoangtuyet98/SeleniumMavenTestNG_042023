@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="First Suite" verbose="1">
+
+    <test name="First Test">
+        <classes>
+            <class name="tuyet.hoangthi.Bai10_Annotations.LoginTest">
+                <methods>
+                    <include name="Login"></include>
+                    <include name="AddCustormer"></include>
+                    <include name="AddProject"/>
+                    <include name="SearchProject"/>
+
+                </methods>
+            </class>
+
+
+            <class name="tuyet.hoangthi.Bai10_Annotations.CheckCustormerAndProject">
+                <methods>
+                    <include name="AddCustormer"></include>
+                    <include name="AddCustormer"></include>
+                    <include name="AddProject"/>
+                    <include name="SearchProject"/>
+
+                </methods>
+            </class>
+
+
+            <class name="tuyet.hoangthi.Bai10_Annotations.TaskTest">
+                <methods>
+                    <include name="AddTask"></include>
+                    <include name="SearchProject"></include>
+
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+
+
+</suite>
